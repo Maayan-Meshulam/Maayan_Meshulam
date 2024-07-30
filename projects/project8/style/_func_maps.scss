@@ -1,0 +1,14 @@
+// functions
+@function family-font($family){
+    @return map-get($map: $font_family, $key: $family);
+}
+
+
+
+// maps
+$font_family:(
+    'Assistant':("Assistant", sans-serif),
+    'Maname':("Maname", serif),
+    'Amatic SC': ("Amatic SC", sans-serif)
+);
+

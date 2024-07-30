@@ -1,0 +1,9 @@
+// functions
+
+@function family($family){
+    @return map-get($font_family, $family)
+};
+
+@function font-size($size){
+    @return map-get($font-size , $size)
+}

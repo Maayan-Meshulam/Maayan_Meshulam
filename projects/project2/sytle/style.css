@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&family=Varela+Round&display=swap');
+
+*{
+    margin: 0;
+}
+
+body{
+    direction: rtl;
+    background: linear-gradient(#281EFF, #2DFF8C);
+    background: -o-linear-gradient(#281EFF, #2DFF8C);
+    background: -moz-linear-gradient(#281EFF, #2DFF8C);
+    background: -webkit-linear-gradient(#281EFF, #2DFF8C);
+    background-repeat: no-repeat;
+    padding: 0.5px;
+}
+
+#container-above{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+#div-content{
+    width: 1099px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    margin: auto;
+    text-align: center;
+}
+        
+h2{
+    font-size: 160px;
+    font-family: 'satisfy', cursive;
+    font-weight: 500;
+    color: #FFFFFF;
+    text-shadow: 0 0 36px #00000087;
+    margin-bottom: 20px;
+}
+
+h3{
+    font-size: 32px;
+    font-family: 'Varela Round', sans-serif;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+p{
+    font-size: 16px;
+    font-family: 'Varela Round', sans-serif;
+    color: #FFFFFF;
+    margin-bottom: 50px;
+}
+
+form{
+    display: flex;
+}
+
+.div_group-form{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+label{
+    font-size: 16px;
+    font-family: 'Varela Round', sans-serif;
+    color: #F9F9F9;
+    text-align: right;
+}
+
+input{
+    background: transparent;
+    border: 2px solid white;
+    height: 50px;
+    width: 420px;
+    /* המסגרת תהיה חלק מהרוחב הכולל */
+    box-sizing: border-box;
+}
+
+button{
+    font-size: 16px;
+    font-family: 'Varela Round', sans-serif;
+    color: #1C1C1C;
+    background-color: #FFFFFF;
+    border: none;
+    height: 50px;
+    width: 206.41px;
+    align-self: last baseline;
+    cursor: pointer;
+}
+
+
+
+
+/* -------------------------media screen ---------------------------- */
+
+@media screen and (max-width:1200px) {
+    #div-content{
+        width: 800px;
+    }      
+    
+    h2{
+        font-size: 120px;
+    }
+
+    h3{
+        font-size: 26px;
+    }
+
+    input{
+        width: 300px;
+        height: 36px;
+    }
+    
+    button{
+        width: 150px;
+        height: 36px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    #div-content{
+        width: 500px;
+        margin-top: 0;
+        height: 100%;
+    }        
+
+    h2{
+        font-size: 80px;
+        margin-bottom: 20px;
+    }
+
+    h3{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    p{
+        margin-bottom: 70px;
+    }
+
+    form{
+        flex-direction: column;
+        width: 95%;
+        
+    }   
+
+    .div_group-form{
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    input{
+        width: 100%;
+    }
+   
+    button{
+        width: 100%;
+        font-size: 11px;
+        color: #2823FD;
+
+    }
+}
+
+
+@media screen and (max-width:600px) {
+    #div-content{
+        width: 330px;
+    }      
+    h2{
+        font-size: 60px;
+    }
+    h3{
+        font-size: 18px;
+    }
+}

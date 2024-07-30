@@ -1,0 +1,11 @@
+$darkBlue_C: darkblue;
+$white_C: white;
+$whiteSmoke_C: whitesmoke;
+$lightBlue_C: lightblue;
+
+
+
+@mixin flexAlignCenter{
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    direction: rtl;
+    height: 100vh;
+}
+
+#upper-div{
+    height: 68%;
+    box-sizing: border-box;
+    background: url('../images/backgroung_blue.png');
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#inbox-upper{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+
+}
+
+h2{
+    color: #D3E10E;
+    font-size: 86px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-family: 'Assistant', sans-serif;
+}
+
+p{
+    font-size: 20px;
+    color: #F9F9F9;
+    font-family: 'Assistant', sans-serif;
+}
+
+#buttom-div{
+    height: 32%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#inbox-buttom{
+    margin: auto;
+    width: fit-content;
+}
+
+form{
+    display: flex;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    font-family: 'Assistant', sans-serif;
+    font-weight: bold;
+    color: #011560;
+}
+
+label{
+    font-size: 16px;
+}
+
+input{
+    width: 420px;
+    height: 50px;
+    background-color: #F6F6F6;
+    border: none;
+    border-bottom: 4px solid #D3E10E;
+    box-sizing: border-box;
+}
+
+button{
+    background-color: #D3E10E;
+    width: 166px;
+    height: 50px;
+    font-size: 22px;
+    align-self: last baseline;
+    border: none;
+    font-family: 'Assistant', sans-serif;
+    font-weight: bold;
+    color: #011560;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* --------------------------media screen------------------------------ */
+
+
+@media screen and (max-width:1200px){
+    h2{
+        font-size: 65px;
+    }
+
+    input{
+        width: 320px;
+    }
+
+    button{
+        width: 120px;
+    }
+    
+}
+
+
+@media screen and (max-width:992px){
+    #upper-div{
+        height: 55%;
+    }
+    #buttom-div{
+        height: 45%;
+    }
+    h2{
+        font-size: 36px;
+        margin-bottom: 15px;
+    }
+
+    p{
+        font-size: 15px;
+    }
+
+    form{
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .form-group{
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    input{
+        width: 380px;
+        height: 40px;
+    }
+
+    button{
+        width: 380px;
+        height: 40px;
+        align-self: flex-start;
+    }
+    
+    @media (orientation:portrait) {
+        
+        h2{
+            font-size: 65px;
+            margin-bottom: 30px;
+        }
+
+        p{
+            font-size: 20px;
+        }
+        
+        label{
+            font-size: 16px;
+        }
+
+        input{
+            width: 420px;
+            height: 50px;
+        }
+
+        button{
+            width: 420px;
+            height: 50px;
+            font-size: 22px;
+        }
+
+    }
+      
+}
+
+
+@media screen and (max-width:600px){
+    #inbox-upper{
+        display: block;
+        padding: 0 20px;
+        padding-bottom: 25%;
+    }
+
+    h2{
+        font-size: 30px;
+    }
+
+    label{
+        font-size: 10px;
+    }
+
+    input{
+        width: 285px;
+        height: 34px;
+    }
+
+    button{
+        width: 285px;
+        height: 34px;
+        font-size: 14px;
+    }
+    
+}

@@ -1,0 +1,16 @@
+@mixin hide_elemnt{
+    height: 0;
+    overflow: hidden;
+}
+
+@mixin flexRow{
+    display: flex;
+    gap: 40px;
+}
+
+@mixin flexColumn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

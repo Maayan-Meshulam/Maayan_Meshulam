@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    direction: rtl;
+    background-color: #121111; 
+    color: white;
+}
+
+h2{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+p{
+    margin-bottom: 20px;
+}
+
+#upper-pic{
+    background-image: url('../images/party.jpg');
+    background-size: cover;
+    background-position: bottom;
+    color: white;
+    text-align: center;
+    padding: 200px 0 300px 0;
+    font-size: 80px;
+    text-shadow: 2px 2px black;
+    font-weight: 900;
+}
+
+#info{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 130px 35px;
+    padding-left: 200px;
+}
+
+#mobile_info{
+    background-color: darkblue;
+    color: white;
+    font-size: 20px;
+    box-shadow: 0 0 10px darkblue;
+    text-align: center;
+    padding: 20px;
+    margin-top: 100px;
+    display: none;
+}
+
+#info > div{
+    background-color: darkblue;
+    color: white;
+    font-size: 20px;
+    border-radius: 50%;
+    padding: 50px 40px;
+    box-shadow: 0 0 10px darkblue;
+    text-align: center;
+    width: fit-content;
+}
+
+.Services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
+}
+
+.Services > h2{
+    font-family: "Rubik", sans-serif;
+}
+
+.Services > p{
+    max-width: 290px;
+}
+
+.col-lg-4 > .Services > img{
+    width: 250px;
+    height: 200px;
+    border-radius: 30px;
+}
+
+
+
+
+
+
+@media screen and (max-width:1200px) {
+    #upper-pic{
+        font-size: 60px;
+    }
+
+    #info{
+        padding-left: 50px;
+    }
+
+    .Services{
+        padding: 50px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    #upper-pic{
+        font-size: 45px;
+    }
+
+    #info{
+        flex-direction: column;
+        text-align: center;
+        padding: 100px 50px;
+        display: none;
+    }
+
+    #mobile_info{
+        display: block;
+    }
+
+}

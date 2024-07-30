@@ -1,0 +1,157 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alef:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&display=swap');
+
+@import './var';
+@import './function';
+@import './maps';
+@import './mixin';
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    direction: rtl;
+    background-color: $lightblue_opacity;
+}
+
+h1{
+    margin-bottom: 50px;
+    font-size: font-size('xxl');
+    font-family:  family("Playwrite HU");
+    text-align: center;
+}
+
+h2{
+    font-size: font-size('md');
+    font-family: family('Heebo');
+}
+
+p, a{
+    font-size: font-size('s');
+    font-family: family('Heebo');
+}
+
+a, a:visited{
+    text-decoration: none;
+    color: white;
+}
+
+#body-container{
+    @include flexColumn;
+    box-shadow: inset 0 0 40px $darkblue_opacity;
+    background-image: url('../images/naaz.png'),  url('../images/naaz.png');
+    background-size: 120px;
+    background-repeat: no-repeat;
+    background-position: left top, right top;
+    padding: 50px 0;
+}
+
+#above_container{
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    grid-template-rows: 300px 300px;
+    gap: 50px;
+}
+
+.container1, .container2, .container3{
+    position: relative;
+    width: 100%;
+    height: 100% 
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    transition: opacity 0.5s;
+}
+
+.overly1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    @include hide_elemnt;
+    background-color: $darkBlue;
+    color: $white;
+}
+
+.container1:hover .overly1{
+    height: auto;
+    padding: 20px;
+}
+
+.container1:hover .img1{
+    opacity: 0.3;
+}
+
+.overly2, .overly3{
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    @include hide_elemnt;
+    background-color: rgba($black, 0.5);
+    color: $white;
+    box-sizing: border-box;
+    transition:  0.5s;
+}
+
+.container2:hover .overly2{
+    height: 100%;
+    padding: 20px 35px;
+}
+
+.container3:hover .overly3{
+    height: 80px;
+    padding: 10px 35px;
+}
+
+
+@media screen and (max-width:1200px){
+    #above_container{
+        grid-template-columns: 350px 350px;
+        grid-template-rows: 300px 300px 300px;
+        gap: 50px;
+    }
+}
+
+
+@media screen and (max-width:992px){
+    #above_container{
+        grid-template-columns: 350px;
+        grid-template-rows: 300px 300px 300px 300px 300px 300px;
+        gap: 50px;
+    }
+
+    h1{
+        font-size: 50px;
+    }
+
+    #body-container{
+        background-size: 100px;
+    }
+}
+
+
+@media screen and (max-width:600px){
+    #above_container{
+        grid-template-columns: 300px;
+        grid-template-rows: 250px 250px 250px 250px 250px 250px;
+        gap: 50px;
+    }
+
+    h1{
+        font-size: 35px;
+        max-width: 300px;
+    }
+
+    #body-container{
+        background-size: 65px;
+    }
+}

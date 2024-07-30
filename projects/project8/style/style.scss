@@ -1,0 +1,210 @@
+@import './func_maps';
+@import './var';
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Assistant:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Assistant:wght@200..800&family=Maname&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    direction: rtl;
+}
+
+#upperDiv{
+    @include flexAlignCenter;
+    flex-direction: row-reverse;
+    font-family: family-font('Assistant');
+}
+
+#img_box{
+    width: 70%;
+}
+
+img{
+    width: 100%;
+    height: 800px;
+    display: block;
+}
+
+#containerContent{
+    @include flexAlignCenter;
+    flex-direction: column;
+    width: 30%;
+}
+
+#text{
+    padding-top: 20px;
+}
+
+#contentUs{
+    background-color: $darkBlue_C;
+    color: $white_C;
+    @include flexAlignCenter;
+    flex-direction: column;
+    text-align: center;
+    width: 400px;
+    padding: 65px 30px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+#line{
+    margin-bottom: 0;
+    max-width:300px;
+    overflow: hidden;
+}
+
+#contentUs > h2{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#contentUs > p{
+    margin-bottom: 20px;
+}
+
+#contentUs > input{
+    width: 100%;
+    height: 50px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    padding-right: 5px;
+}
+
+#contentUs > button{
+    width: 100%;
+    height: 40px;
+    border-radius: 15px;
+    background-color: $lightBlue_C;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: family-font('Maname');
+    direction: ltr;
+}
+
+#text, #text > p, #text > h3{
+    width: fit-content;
+}
+
+#text > h1{
+    max-width: 200px;
+    font-size: 35px;
+}
+
+
+#bottomDiv{
+    font-family:family-font('Amatic SC');
+    background-color: $darkBlue_C;
+    color: $whiteSmoke_C;
+    margin-top: 50px;
+    @include flexAlignCenter;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+#bottomDiv > span{
+    font-size: 30px;
+}
+
+@media screen and (max-width:1400px) {
+   
+    #contentUs{
+        width: 350px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    #img_box{
+        width: 60%;
+    }
+    
+    #containerContent{
+        width: 40%;
+    }
+  
+}
+
+
+@media screen and (max-width:992px) {
+   
+    #upperDiv{
+        flex-direction: column;
+    }
+
+    #img_box{
+        width: 100%;
+    }
+    
+    img{
+        height: 550px;
+    }
+
+    #containerContent{
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    #contentUs{
+        width: 400px;
+    }
+
+    #bottomDiv > span{
+        font-size: 25px;
+    }
+
+
+    @media (orientation:landscape) {
+        img{
+            display: none;
+        }
+        
+    }
+}
+
+
+@media screen and (max-width:600px) {
+
+    #container_above-all{
+        background: repeating-linear-gradient(lightcyan, lightgoldenrodyellow, lightblue, lightseagreen) ;
+        background: -o-linear-gradient(lightcyan, lightgoldenrodyellow, lightblue, lightseagreen);
+        background: -moz-linear-gradient(lightcyan, lightgoldenrodyellow, lightblue, lightseagreen);
+        background: -webkit-linear-gradient(lightcyan, lightgoldenrodyellow, lightblue, lightseagreen);
+    }
+
+    img{
+        height: 350px;
+        display: none;
+    }
+    #text{
+        display: none;
+    }
+    #contentUs{
+        width: 300px;
+    }
+    
+    #line{
+        max-width:240px;
+    }
+
+    #contentUs > h2{
+        font-size: 20px;
+    }
+    
+    #contentUs > p{
+        font-size: 15px;
+    }
+
+    #bottomDiv > span{
+        font-size: 15px;
+    }
+
+}
