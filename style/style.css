@@ -9,7 +9,7 @@ body{
     font-family: 'Heebo', sans-serif;
 }
 
-a:not(.a-nav, .icon > a), button{
+a:not(.a-nav, .icon > a), button:not(#dropdownBtn){
     background-color: #1AE0EC;
     color: #2C2C2C;
     font-size: 14px;
@@ -22,7 +22,7 @@ a:not(.a-nav, .icon > a), button{
     cursor: pointer;
 }
 
-a:hover:not(.a-nav), button:hover{
+a:hover:not(.a-nav), button:not(#dropdownBtn):hover{
     box-shadow: 0 0 15px #1AE0EC;
 } 
 
@@ -52,13 +52,13 @@ a:hover:not(.a-nav), button:hover{
 .nav-page{
     display: flex;
     align-items: center;
-    font-size: 25px;
     gap: 30px;
     margin-top: 10px;
 }
 
 
-.nav-page > a{
+.nav-page > a, #dropdownBtn{
+    font-size: 25px;
     color: black;
     display: inline-block;
     text-decoration: none;
@@ -67,10 +67,11 @@ a:hover:not(.a-nav), button:hover{
 
 .nav-page > a:active, .nav-page > a:visited{
     color: black;
+    text-decoration: none;
 }
 
 
-.nav-page > a:hover{
+.nav-page > a:hover, #dropdownBtn:hover{
     color: #1AE0EC;
     font-weight: 600;
     cursor: pointer;
@@ -99,6 +100,34 @@ a:hover:not(.a-nav), button:hover{
 input[type='checkbox'], #lab, #lab_x{
     display: none;
 }
+
+#dropdownContent{
+    flex-direction: column;
+    display: none;
+    position: absolute;
+}
+
+#dropdownCotent > a{
+    text-decoration: none;
+    color: purple;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+#dropdownContent > a:visited{
+    color: purple;
+    text-decoration: none;
+}
+
+#dropdownBtn{
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+}
+
+
 
 
 /* כותרת + איזור על עצמי */
@@ -189,6 +218,7 @@ main{
     color: #3A3A3A;
 
 }
+
 .container{
     width: 100%;
     display: flex;
@@ -197,6 +227,7 @@ main{
     gap: 20px;
     padding-top: 110px;
 }
+
 .card{
     width: 30%;
     height: auto;
@@ -207,6 +238,7 @@ main{
     box-shadow: 3px 3px 30px #00000029 ;
     border-radius: 10px;
     transition: box-shdow 2s;
+    background-color: white;
 }
 
 .card:hover{
@@ -303,6 +335,7 @@ main{
     font-weight: bold;
     display: block;
 }
+
 
 #container-content > input{
     width: 600px;

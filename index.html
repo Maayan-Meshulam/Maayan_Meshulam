@@ -18,8 +18,15 @@
             <section class="nav-page">
                 <a href="#top-of-page" class="a-nav">ראשי</a>
                 <a href="#div-about_me" class="a-nav">אודות</a>
-                <a href="#container" class="a-nav">גלריה</a>
+                <div>
+                    <button id="dropdownBtn" onclick="dropdownBtnFunc()">גלריה^</button>
+                    <div id="dropdownContent">
+                        <a href="#container1" class="a-nav">גלריה</a>
+                        <a href="#titleJSGallery" class="a-nav">גלריה 2</a>
+                    </div>
+                </div>
                 <a href="#content-us-before" class="a-nav">צור קשר</a>
+
             </section>
         </div>
 
@@ -59,7 +66,7 @@
         <img src="images/profile-image .png" alt="profile image" id="profile_img_about_me-noClick">
         <h1>קצת עליי</h1>
         <p>
-            שמי מעיין משולם, חיילת, בת 19.5  מכפר סבא. 
+            שמי מעיין משולם, חיילת, בת 20 מכפר סבא. 
             למדתי בתיכון מדעי המחשב 5 יחידות , מאוד התחברתי למקצוע והבנתי שזה התחום שארצה לעסוק בו בעתיד.
                 
         </p>
@@ -69,7 +76,7 @@
 
 
     <main>
-        <div class="container" id="container">
+        <div class="container" id="container1">
 
             <div class="card">
                 <img src="images/bg_gallery-01.png" alt="form on pink bg">
@@ -199,6 +206,104 @@
             </div>
 
         </div>
+
+        <!-- js gallery -->
+
+
+        <h1 style="text-align: center; padding-top: 120px;" id="titleJSGallery">JS Gallery</h1>
+
+        <div class="container" id="container2" style="padding-top: 50px;">            
+            <div class="card">
+                <img src="images/js_bg_gallery01.png" alt="form on pink bg">
+                <form>
+                    <h2>איקס עיגול</h2>
+                    <p> איקס עיגול נגד המחשב, שחק עכשיו !
+                    </p>
+                    <div class="images_project">
+                        <img src="images/img-HTML.png" alt="html logo">
+                        <img src="images/img-CSS.png" alt="css logo">
+                        <img src="/images/jsIcon.png" alt="js logo">
+                    </div>
+                    <a href="projects/transition-pages/js projects/project1.html" target="_blank" class="button">לעמוד הפרויקט >></a>
+                </form>
+            </div>
+
+            <div class="card">
+                <img src="images/js_bg_gallery02.png" alt="form on green-blue bg">
+                <form>
+                    <h2>טבלת משתמשים</h2>
+                    <p> הירשם / התחבר למערכת ניהול המשתמשים
+                    </p>
+                    <div class="images_project">
+                        <img src="images/img-HTML.png" alt="html logo">
+                        <img src="images/img-CSS.png" alt="css logo">
+                        <img src="/images/jsIcon.png" alt="js logo">
+                    </div>
+                    <a href="projects/transition-pages/js projects/project2.html" target="_blank" class="button">לעמוד הפרויקט >></a>
+                </form>
+            </div>
+
+            <div class="card">
+                <img src="images/js_bg_gallery03.png" alt="form with coffe picture">
+                <form>
+                    <h2>עגלת קניות</h2>
+                    <p>סופר דיגטלי, קל ונוח לשימוש
+                    </p>
+                    <div class="images_project">
+                        <img src="images/img-HTML.png" alt="html logo">
+                        <img src="images/img-CSS.png" alt="css logo">
+                        <img src="/images/jsIcon.png" alt="js logo">
+                    </div>
+                    <a href="projects/transition-pages/js projects/project3.html" target="_blank" class="button">לעמוד הפרויקט >></a>
+                </form>
+            </div>
+
+            <div class="card">
+                <img src="images/js_bg_gallery04.png" alt="form on yellow bg">
+                <form>
+                    <h2> בונה מסך</h2>
+                    <p>כאן תוכל לבנות דפים אינטרנטיים ללא ידע בתכנות 
+                    </p>
+                    <div class="images_project">
+                        <img src="images/img-HTML.png" alt="html logo">
+                        <img src="images/img-CSS.png" alt="css logo">
+                        <img src="/images/jsIcon.png" alt="js logo">
+                    </div>
+                    <a href="projects/transition-pages/js projects/project4.html" target="_blank" class="button">לעמוד הפרויקט >></a>
+                </form>
+            </div>
+
+            <div class="card">
+                <img src="images/js_bg_gallery05.png" alt="pictures from the world">
+                <form>
+                    <h2>זיכרון</h2>
+                    <p>גם תשפר את הזיכרון וגם תלמד ערי בירה ומדינות
+                    </p>
+                    <div class="images_project">
+                        <img src="images/img-HTML.png" alt="html logo">
+                        <img src="images/img-CSS.png" alt="css logo">
+                        <img src="/images/jsIcon.png" alt="js logo">
+                    </div>
+                    <a href="projects/transition-pages/js projects/project5.html" target="_blank" class="button">לעמוד הפרויקט >></a>
+                </form>
+            </div>
+
+            <div class="card">
+                <img src="images/js_bg_gallery06.png" alt="service, map and form">
+                <form>
+                    <h2>לומדת חשבון</h2>
+                    <p> רוצה להשתפר במתמטיקה? כנס ותרגל
+                    </p>
+                    <div class="images_project">
+                        <img src="images/img-HTML.png" alt="html logo">
+                        <img src="images/img-CSS.png" alt="css logo">
+                        <img src="/images/jsIcon.png" alt="js logo">
+                    </div>
+                    <a href="projects/transition-pages/js projects/project6.html" target="_blank" class="button">לעמוד הפרויקט >></a>
+                </form>
+            </div>
+
+        </div>
     </main>
 
 
@@ -262,5 +367,7 @@
     </div>
 
 
+
+    <script src="js/script.js"></script>
 </body>
 </html>
